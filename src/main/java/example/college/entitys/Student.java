@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -22,6 +23,7 @@ public class Student {
 	private Long studentId;
 
     @Column(name = "Name", length = 30)
+    @NotEmpty(message = "El nombre no puede estar en blanco")
     @NotBlank(message = "El nombre no puede estar en blanco")
     private String name;
 

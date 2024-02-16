@@ -3,7 +3,6 @@ package example.college.dto;
 import java.util.List;
 
 import example.college.entitys.Course;
-import example.college.entitys.Registration;
 import example.college.entitys.Student;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
